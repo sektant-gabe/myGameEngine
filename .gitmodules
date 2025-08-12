@@ -1,0 +1,3 @@
+[submodule "Magnum/vendor/spdlog"]
+	path = Magnum/vendor/spdlog
+	url = https://github.com/gabime/spdlog

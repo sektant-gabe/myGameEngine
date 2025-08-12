@@ -1,1 +1,3 @@
-# myGameEngine
+# Magnum Engine
+
+## Developed by me :) 

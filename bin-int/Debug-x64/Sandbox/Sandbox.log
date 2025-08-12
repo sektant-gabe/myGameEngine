@@ -1,3 +1,0 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2189,5): warning MSB9008: The referenced project ..\myGameEngine.vcxproj does not exist.
-  SandboxApp.cpp
-  Sandbox.vcxproj -> C:\Projects\Magnum\bin\Debug-x64\Sandbox\Sandbox.exe

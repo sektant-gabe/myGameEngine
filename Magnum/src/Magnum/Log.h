@@ -5,20 +5,21 @@
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 
-namespace Magnum {
+namespace Magnum
+{
 
-	class MAGNUM_API Log
-	{
-	public:
-		static void Init();
+class MAGNUM_API Log
+{
+public:
+    static void Init();
 
-		inline static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
-		inline static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
+    inline static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
+    inline static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
 
-	private:
-		static std::shared_ptr<spdlog::logger> s_CoreLogger;
-		static std::shared_ptr<spdlog::logger> s_ClientLogger;
-	};
+private:
+    static std::shared_ptr<spdlog::logger> s_CoreLogger;
+    static std::shared_ptr<spdlog::logger> s_ClientLogger;
+};
 
 }
 
@@ -36,4 +37,3 @@ namespace Magnum {
 #define MAGNUM_WARN(...)        ::Magnum::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define MAGNUM_ERROR(...)       ::Magnum::Log::GetClientLogger()->error(__VA_ARGS__)
 #define MAGNUM_FATAL(...)       ::Magnum::Log::GetClientLogger()->fatal(__VA_ARGS__)
-
